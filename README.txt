@@ -1,0 +1,1 @@
+This is what I made while learning HTML and CSS through Responsive Web Design in FreeCodeCamp tutorials
