@@ -1,0 +1,53 @@
+<html>
+    <body>
+        <main>
+        <!--The lower the number, the higher the importance. Only use one h1 per page and bigger numbers below higher importance headings. -->
+        <!-- It is important to remember that nested elements should be placed two spaces further to the right of the element they are nested in. -->
+            <h1>Let's build a CatPhotoApp together!</h1>
+            <section>
+                <h2>Cat Photos</h2>
+                <p>See more  <a href='https://freecatphotoapp.com' target="_blank">cat pictures</a> in our gallery. </p>  
+                <!--The img tag is a self-closing tag, it does not need an additional closing tag-->   
+                <a target="_blank" href= "https://freecatphotoapp.com"> <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" href= "https://freecatphotoapp.com" alt="A cute orange cat lying on its back"></a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <!--When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.-->
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+              <figure>  
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+                <figcaption>
+                    Cats <em>love</em> lasagna.
+                </figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+              </ol>
+              <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+                <figcaption>
+                    Cats <strong>hate</strong> other cats.
+                </figcaption>
+
+              </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <label><input type="radio">Indoor</label>
+                    <input type="text" placeholder="cat photo URL" name="catphotourl" required>
+                    <button type="submit">Submit</button> 
+                </form>
+
+            </section>
+    </main>
+    </body>
+</html>
