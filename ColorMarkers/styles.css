@@ -21,8 +21,23 @@ h1 {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
   }
 
+  .cap, .sleeve {
+    display: inline-block;
+  }
+
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+
   .sleeve {
     width: 110px;
     height: 25px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.5);
+   /* border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; 
+    you can replace all of this using:
+    border-left: width style color;*/
+    border-left: 10px double rgba(0, 0, 0, 75%);
   }
