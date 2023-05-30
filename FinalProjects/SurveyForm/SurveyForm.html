@@ -16,11 +16,11 @@
             <fieldset>
                 <label for="name">お名前をご入力ください。* <input name="first-name" id="first-name" type="text" required></label>
                 <label for="email">メールアドレスをご入力ください。* <input name="email" id="email" type="email" required></label>
-                <label for="age">年齢をご入力ください。* <input name="age" id="age" type="number"  min="18" max="120"></label>
+                <label for="age">年齢をご入力ください。 <input name="age" id="age" type="number"  min="18" max="120"></label>
             </fieldset>
             <fieldset>
-                <label for="position">どのポジションに応募しましたか。
-                    <select name="position" id="position">
+                <label for="position">どのポジションに応募しましたか。*
+                    <select name="position" id="position" required>
                       <option value="">オプションを選択してください。</option>
                       <option value="1">Web開発</option>
                       <option value="2">ソフトウェアエ</option>
@@ -28,12 +28,33 @@
                       <option value="4">その他</option>
                     </select>
                   </label>
-                  <p>今後弊社選考への本エントリーを希望しますか</p>
-                  <label for="desire"><input class="inline" id="desire" type="radio" name="options"> 希望する</label>
+                  <p>今後弊社選考への本エントリーを希望しますか。*</p>
+                  <label for="desire"><input checked class="inline" id="desire" type="radio" name="options"> 希望する</label>
                   <label for="thinking"><input class="inline" id="thinking" type="radio" name="options">検討する</label>
                   <label for="nodesire"><input class="inline" id="nodesire" type="radio" name="options">希望しない</label>
+                  <label for="point">どのポジションに応募しましたか。*
+                    <select name="point" id="point" required>
+                      <option value="">オプションを選択してください。</option>
+                      <option value="1">アセミナー</option>
+                      <option value="2">座談会</option>
+                      <option value="3">休憩</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </label>
+                  <label for="whatother">その他のを選択した場合は、理由を教えてください。  <input name="whatother" id="whatother" type="text"></label>
             </fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <p>このイベントのこと、どのように知りましたか。(該当する項目にすべてチェックしてください。)</p>
+                <label for="linkedin"><input class="inline" name="linkedin" id="linkedin" type="checkbox" required>LinkedIn</label>
+                <label for="tv"><input class="inline" name="tv" id="tv" type="checkbox"> Television</label>
+                <label for="site"><input class="inline" name="site" id="site" type="checkbox">弊社のウェブサイト</label>
+                <label for="other"><input class="inline" name="other" id="other" type="checkbox">その他</label>
+            </fieldset>
+            <fieldset>
+                <label for="doubts"> イベント内で解消できなかった疑問点・企画へのご意見などございましたら下記ご記入ください。
+                    <textarea name="doubts" id="doubts" rows="3" cols="30" placeholder="ここにコメントをご入力ください。"></textarea>
+                    </label>
+            </fieldset>
             <input type="submit" value="Submit">
         </form>
     </body>
