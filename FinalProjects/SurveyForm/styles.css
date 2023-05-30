@@ -20,7 +20,7 @@ body{
     height: 1500px;
     padding: 0;
     opacity: 0.5;
-    background-image: url('background.jpg');
+    background-image: url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1955&q=80');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
