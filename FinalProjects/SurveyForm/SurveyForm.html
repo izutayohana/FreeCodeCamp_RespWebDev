@@ -6,6 +6,8 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
+        <div class="back">
+            <div class="content">
         <h1>05/30 エンジニアセミナー・座談会 </h1>
         <p>この度は、弊社のセミナーにご参加いただき誠に有難うございます。
 
@@ -28,7 +30,7 @@
                       <option value="4">その他</option>
                     </select>
                   </label>
-                  <p>今後弊社選考への本エントリーを希望しますか。*</p>
+                  <div>今後弊社選考への本エントリーを希望しますか。*</div>
                   <label for="desire"><input checked class="inline" id="desire" type="radio" name="options"> 希望する</label>
                   <label for="thinking"><input class="inline" id="thinking" type="radio" name="options">検討する</label>
                   <label for="nodesire"><input class="inline" id="nodesire" type="radio" name="options">希望しない</label>
@@ -41,10 +43,10 @@
                       <option value="4">その他</option>
                     </select>
                   </label>
-                  <label for="whatother">その他のを選択した場合は、理由を教えてください。  <input name="whatother" id="whatother" type="text"></label>
+                  <label for="what">その他のを選択した場合は、理由を教えてください。  <input name="what" id="what" type="text"></label>
             </fieldset>
             <fieldset>
-                <p>このイベントのこと、どのように知りましたか。(該当する項目にすべてチェックしてください。)</p>
+                <div>このイベントのこと、どのように知りましたか。(該当する項目にすべてチェックしてください。)</div>
                 <label for="linkedin"><input class="inline" name="linkedin" id="linkedin" type="checkbox" required>LinkedIn</label>
                 <label for="tv"><input class="inline" name="tv" id="tv" type="checkbox"> Television</label>
                 <label for="site"><input class="inline" name="site" id="site" type="checkbox">弊社のウェブサイト</label>
@@ -57,6 +59,8 @@
             </fieldset>
             <input type="submit" value="Submit">
         </form>
+        </div>
+    </div>
     </body>
     
 </html>
