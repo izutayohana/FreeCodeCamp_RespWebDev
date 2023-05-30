@@ -2,14 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>My Survey</title>
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1></h1>
-        <p></p>
+        <h1>05/30 エンジニアセミナー・座談会 </h1>
+        <p>この度は、弊社のセミナーにご参加いただき誠に有難うございます。
+
+            本件は、セミナー満足度向上のためのアンケートとなっております。
+            お気軽にご感想をお答えください。</p>
+            <p class="mandatory">* は必要です。</p>
         <form>
-            
+            <fieldset>
+                <label for="name">お名前をご入力ください。* <input name="first-name" id="first-name" type="text" required></label>
+                <label for="email">メールアドレスをご入力ください。* <input name="email" id="email" type="email" required></label>
+                <label for="age">年齢をご入力ください。* <input name="age" id="age" type="number"  min="18" max="120"></label>
+            </fieldset>
+            <fieldset>
+                <label for="position">どのポジションに応募しましたか。
+                    <select name="position" id="position">
+                      <option value="">オプションを選択してください。</option>
+                      <option value="1">Web開発</option>
+                      <option value="2">ソフトウェアエ</option>
+                      <option value="3">ゲーム開発</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </label>
+                  <p>今後弊社選考への本エントリーを希望しますか</p>
+                  <label for="desire"><input class="inline" id="desire" type="radio" name="options"> 希望する</label>
+                  <label for="thinking"><input class="inline" id="thinking" type="radio" name="options">検討する</label>
+                  <label for="nodesire"><input class="inline" id="nodesire" type="radio" name="options">希望しない</label>
+            </fieldset>
+            <fieldset></fieldset>
+            <input type="submit" value="Submit">
         </form>
     </body>
     
