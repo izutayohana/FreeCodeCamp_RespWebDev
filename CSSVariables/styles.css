@@ -3,6 +3,7 @@
     --building-color2: #66cc99;
     --building-color3: #cc6699;
     --building-color4: #538cc6;
+    --window-color1: black;
   }
 
 * {
@@ -23,7 +24,7 @@ overflow: hidden;
     align-items: flex-end;
     justify-content: space-evenly;
 }
-
+/*BACKGROUND BUILDINGS - "bb" stands for "background building"*/
 .bb1 {
     height: 70%;
     width: 10%;
@@ -32,22 +33,21 @@ overflow: hidden;
     align-items: center;
 }
 
-.bb1a {
+.bb1-window {
     height: 10%;
+    background: linear-gradient(var(--building-color1), var(--window-color1));
+    }
+
+.bb1a {
     width: 70%;
-    background-color: var(--building-color1);
 }
 
 .bb1b {
-    height: 10%;
     width: 80%;
-    background-color: var(--building-color1);
 }
 
 .bb1c {
-    height: 10%;
     width: 90%;
-    background-color: var(--building-color1);
 }
 
 .bb1d {
@@ -85,32 +85,44 @@ overflow: hidden;
     top: 0;
   }
 
+  /*FOREGROUND BUILDINGS - "fb" stands for "foreground building"*/
+
 .fb1 {
     width: 10%;
     height: 60%;
+    background-color: var(--building-color4);
 }
 
 .fb2 {
     width: 10%;
     height: 40%;
+    background-color: var(--building-color3);
 }
 
 .fb3 {
     width: 10%;
     height: 35%;
+    background-color: var(--building-color1);
 }
 
 .fb4 {
     width: 8%;
     height: 45%;
+    background-color: var(--building-color1);
+    position: relative;
+    left: 10%;
 }
 
 .fb5 {
     width: 10%;
     height: 33%;
+    background-color: var(--building-color2);
+    position: relative;
+    right: 10%;
 }
 
 .fb6 {
     width: 9%;
     height: 38%;
+    background-color: var(--building-color3);
 }
